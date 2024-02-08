@@ -26,7 +26,7 @@ func show_game_over():
 	$Message.show()
 
 	# Make one-shot timer and wait for it
-	await get_tree().create_timer(1.0).timeout
+	await get_tree().create_timer(0.5).timeout
 	$StartButton.show()
 
 func update_score(score):
